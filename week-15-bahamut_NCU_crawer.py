@@ -152,9 +152,9 @@ def main( ):
             else:
                 maxf = maxf//20
             print (f"輸入頁面(1~{maxf+1}):")
-            front = int(input())
-            behind = int(input())
-
+            front = int(input("起始頁面:"))
+            behind = int(input("終點頁面:"))
+            
             urls =  [f"{baseurlfront}{page}{baseurlbehind}" for page in range(front, behind)]
             start_time = time.time()  # 開始時間
 
